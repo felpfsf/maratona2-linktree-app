@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-dark);
+  transition: all ease-in-out .2s;
+}
+
+:root {
+  /* cores */
+  --bg-dark: #00082f;
+  /* --bg-dark2: #1f000b; */
+
+  --bg-light: #edf2ff;
+  /* --bg-light2: #fff0f6; */
+
+  --primary: #4263eb;
+  /* --primary2: #d6336c; */
+
+  --secondary: #364fc7;
+  /* --secondary2: #a61e4d; */
+
+  --font-dark: #ffffff;
+
+  font-size: 62.5%;
+}
+
+.light--mode {
+  /* cores */
+  --bg-dark: #edf2ff;
+
+  --bg-light: #00082f;
+}
+
+
+.switch {
+  color: var(--bg-light);
+  font-size: 2.4rem;
+  position: absolute;
+  top: 0;
+  left: 100;
+  padding-block: 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 450px;
+  height: auto;
+
+  margin-top: 6rem;
+  margin-inline: auto;
+
+  padding: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content--wrapper {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 128px;
+
+  padding: 2px;
+
+  border: 4px solid var(--primary);
+  border-radius: 100%;
+}
+
+.name--title {
+  color: var(--bg-light);
+
+  font-size: 3.2rem;
+
+  margin-top: 2.4rem;
+}
+
+.username {
+  color: var(--bg-light);
+
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  margin-top: 0.8rem;
+}
+
+.links--wrapper {
+  margin-block: 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.link--style {
+  background-color: var(--primary);
+  color: var(--font-dark);
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 1.6rem 11rem 1.6rem;
+  border-radius: 0.6rem;
+
+  transition: all ease-in 0.2s;
+}
+
+.link--style:hover {
+  background-color: var(--secondary);
+}
+
+.link--style i {
+  margin-right: 4px;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--bg-light);
+
+  margin-block: 1.6rem;
+}
+
+.attribution a {
+  color: var(--bg-light);
+  transition: all ease-in 0.1s;
+}
+
+.attribution a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid currentColor;
+}
+
+html.sr .link--style {
+  visibility: hidden;
+}

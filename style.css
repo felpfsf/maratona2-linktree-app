@@ -24,7 +24,7 @@ html.sr .load-hidden {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-dark);
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.6s;
 }
 
 :root {
@@ -52,7 +52,6 @@ body {
 
   --bg-light: #00082f;
 }
-
 
 .switch {
   color: var(--bg-light);
